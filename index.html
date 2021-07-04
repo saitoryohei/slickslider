@@ -1,47 +1,32 @@
  <!DOCTYPE html>
-    <html lang="en">
+    <html lang="ja">
       <head>
         <meta charset="utf-8">
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
-        <link rel="stylesheet" href="main.css">
-        <title>リアルタイムフィルター</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet"href="css/slick-theme.css">
+        <title>slickスライドショー</title>
       </head>
  
       <body>
+        <h2>slickのスライドショー</h2>
         <div class="container">
-        <div class="realtime_filter_top">  
-        <h2>リアルタイムフィルター</h2>
-        <p>入力した文字を含まない要素は非表示となります</p>
-        <form>
-        <input class="searchword" type="text" id="search_filter" name="search-word" placeholder="検索ワードを入力"> 
-        </form>
-        </div>
-      
-        <ul class="search_lists">
-        <li>
-        <img src="https://www.pakutaso.com/shared/img/thumb/MITTE0208009_TP_V.jpg" alt ="bird">
-        <p>キーワード</p>
-        <p class="keyword">鳥　とり　bird トリ</p> 
-        </li>
-        <li>
-        <img src="https://www.pakutaso.com/shared/img/thumb/011kumakichi0327_TP_V.jpg" alt ="dog">
-        <p>キーワード</p>
-        <p class="keyword">犬　いぬ　dog　イヌ</p> 
-        </li>
-        <li>
-        <img src="https://www.pakutaso.com/shared/img/thumb/tomcatDSC09085_TP_V.jpg" alt ="cat">
-        <p>キーワード</p>
-        <p class="keyword">猫　ねこ　cat　ネコ</p> 
-        </li>
-        <li>
-        <img src="https://www.pakutaso.com/shared/img/thumb/054mushi20419_TP_V.jpg" alt ="wasp">
-        <p>キーワード</p>
-        <p class="keyword">蜂　はち　bee ハチ</p> 
-        </li>
+        <ul class="slider">
+        <li><img src="image/1.jpg" alt="犬"></li>
+        <li><img src="image/2.jpg" alt="蜂"></li>
+        <li><img src="image/3.jpg" alt="鳥"></li>
+        <li><img src="image/4.jpg" alt="猫"></li>
         </ul>
-        
+        <div class="sentence">
+        <p>画像の左右の矢印、下部のドットをタップでスライドします。</p></br>
+        <p>自動でもスライドします。</p>
         </div>
+      </div>
 
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/slick.min.js"></script>
       </body>
     </html>
+    
+  
